@@ -41,9 +41,9 @@ function answer() {
 let pcConfig = {
     "iceServers":
         [
-            { "url": "stun:stun.jap.bloggernepal.com:5349" },
+            { "urls": "stun:stun.jap.bloggernepal.com:5349" },
             {
-                "url": "turn:turn.jap.bloggernepal.com:5349",
+                "urls": "turn:turn.jap.bloggernepal.com:5349",
                 "username": "guest",
                 "credential": "somepassword"
             }
@@ -241,7 +241,7 @@ function createPeerConnection() {
         peerConnection = new RTCPeerConnection(pcConfig);
         // peerConnection = new RTCPeerConnection();
         peerConnection.onicecandidate = handleIceCandidate;
-        peerConnection.onaddstream = handleRemoteStreamAdded;
+        peerConnection.ontrack = handleRemoteStreamAdded;
         peerConnection.onremovestream = handleRemoteStreamRemoved;
         console.log('Created RTCPeerConnnection');
         return;
