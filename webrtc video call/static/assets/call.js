@@ -1,6 +1,6 @@
 'use strict';
 
-const baseURL = "/"
+const baseURL = "https://appolonia-video-call.herokuapp.com/"
 
 let localVideo = document.querySelector('#localVideo');
 let remoteVideo = document.querySelector('#remoteVideo');
