@@ -41,7 +41,7 @@ function answer() {
 let pcConfig = {
     "iceServers":
         [
-            //{ "urls": "stun:stun.jap.bloggernepal.com:5349" },
+            { "urls": "stun:stun.l.google.com:19302" },
             {
                 "urls": "turn:13.48.124.194:3478?transport=tcp",
                 "username": "appolonia",
