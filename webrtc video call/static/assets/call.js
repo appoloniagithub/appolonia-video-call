@@ -41,11 +41,15 @@ function answer() {
 let pcConfig = {
     "iceServers":
         [
-            {  urls: [ "stun:13.48.124.194" ] },
+            
+           // {  urls: [ "stun:13.48.124.194" ] },
             {
-                "urls": "turn:13.48.124.194:3478?transport=tcp",
-                "username": "appolonia",
-                "credential": "world"
+             urls: "turn:openrelay.metered.ca:80",
+            username: "openrelayproject",
+            credentials: "openrelayproject"
+              //  "urls": "turn:13.48.124.194:3478?transport=tcp",
+                //"username": "appolonia",
+                //"credential": "world"
             }
         ]
 };
