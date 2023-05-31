@@ -43,14 +43,21 @@ let pcConfig = {
         [
             
            // {  urls: [ "stun:13.48.124.194" ] },
-            {
-             urls: "turn:openrelay.metered.ca:80",
-            username: "openrelayproject",
-            credentials: "openrelayproject"
+            //{
+       
               //  "urls": "turn:13.48.124.194:3478?transport=tcp",
                 //"username": "appolonia",
                 //"credential": "world"
-            }
+            //}
+            
+            {
+        urls: "stun:a.relay.metered.ca:80",
+      },
+      {
+        urls: "turn:a.relay.metered.ca:80",
+        username: "2bff6e97b9e6a29dfd49ace5",
+        credential: "pIWnauFslJx/bO/p",
+      },
         ]
 };
 
