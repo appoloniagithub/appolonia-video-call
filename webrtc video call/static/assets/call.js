@@ -252,7 +252,7 @@ function createPeerConnection() {
         peerConnection = new RTCPeerConnection(pcConfig);
         // peerConnection = new RTCPeerConnection();
         peerConnection.onicecandidate = handleIceCandidate;
-        peerConnection.ontrack = handleRemoteStreamAdded;
+        peerConnection.onaddstream = handleRemoteStreamAdded;
         peerConnection.onremovestream = handleRemoteStreamRemoved;
         console.log('Created RTCPeerConnnection');
         return;
