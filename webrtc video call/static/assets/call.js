@@ -41,11 +41,11 @@ function answer() {
 let pcConfig = {
     "iceServers":
         [
-            { "urls": "stun:stun.jap.bloggernepal.com:5349" },
+            //{ "urls": "stun:stun.jap.bloggernepal.com:5349" },
             {
-                "urls": "turn:turn.jap.bloggernepal.com:5349",
-                "username": "guest",
-                "credential": "somepassword"
+                "urls": "turn:13.48.124.194:3478?transport=tcp",
+                "username": "appolonia",
+                "credential": "world"
             }
         ]
 };
