@@ -171,6 +171,7 @@ function sendICEcandidate(data) {
 }
 
 function beReady() {
+    try{
     return navigator.mediaDevices.getUserMedia({
         audio: true,
         video: true
@@ -184,6 +185,9 @@ function beReady() {
         .catch(function (e) {
             alert('getUserMedia() error: ' + e.name);
         });
+    }catch (error) {
+  console.log('JavaScript exception occurred:', error);
+}
 }
 
 function createConnectionAndAddStream() {
