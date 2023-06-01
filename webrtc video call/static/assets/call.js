@@ -172,8 +172,8 @@ function sendICEcandidate(data) {
 
 function beReady() {
     return navigator.mediaDevices.getUserMedia({
-        audio: false,
-        video: false
+        audio: true,
+        video: true
     })
         .then(stream => {
             localStream = stream;
