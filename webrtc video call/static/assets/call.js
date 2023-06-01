@@ -172,7 +172,7 @@ function sendICEcandidate(data) {
 
 function beReady() {
     return navigator.mediaDevices.getUserMedia({
-        audio: true,
+       // audio: true,
         video: true
     })
         .then(stream => {
